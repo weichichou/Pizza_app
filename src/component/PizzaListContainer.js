@@ -16,10 +16,12 @@ class PizzaListContainer extends React.Component {
     }
 }
 
+// This state is redux state
 const mapStateToProps = (state) => {
     return {
         pizzas: state.pizzas
     }
 }
 
+// Because they are connected, so you don't need to pass props when using it (see App.js)
 export default connect(mapStateToProps)(PizzaListContainer)
